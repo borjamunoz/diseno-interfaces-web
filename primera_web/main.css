@@ -16,37 +16,55 @@ header, section, footer, aside, nav, article, hgroup{
 }
 
 body{
-	text-align: center;
+	width: 100%;
+	display: -webkit-box;/*esto se utiliza para hacer la web responsive: http://css-infos.net/properties/webkit*/
+	-webkit-box-pack: center;
 }
 
 #articulos{
 	border: 1px solid black;
-	width: 1000px;
+	max-width: 1000px;
+	/*width: 1000px;*/
+	display: -webkit-box;
+	-webkit-box-flex:1;
+	-webkit-box-orient: vertical;
 	margin: 20px auto;
-	text-align: left;
+	/*text-align: left;*/
 }
 #top_header{
 	background: yellow;
 	border: 1px solid blue;
 	padding: 15px;
 }
+
 #top_menu{
 	background: blue;
 	color: white;
 }
+
 #top_menu li{
 	display: inline-block;
 	padding: 15px;
 	font: bold 14px Verdana;
 }
+#new_div{
+	display: -webkit-box;
+	-webkit-box-orient:horizontal;
+}
+
 #main_section{
-	float: left;
-	width: 660px;
-	margin: 30px; /*660+30+30=720px ocupados, 280px libres*/
+	-webkit-box-flex: 1;
+	min-width: 200px;
+	margin: 20px;
+	padding: 20px;
+	/*float: left;*/
+	/*width: 660px;*/
+	/*margin: 30px; 660+30+30=720px ocupados, 280px libres*/
 }
 #news_aside{
-	float: left;
-	width: 220px;
+	/*float: left;*/
+	-webkit-box-flex: 1;
+	/*width: 220px;*/
 	padding: 30px;
 	margin: 20px 0px;
 	background: #ff2536;
