@@ -1,0 +1,52 @@
+#contenedor{
+	border: 2px solid #999;
+	display: -webkit-box;/*Hace funcionar el webkit-box*/
+	-webkit-box-orient: horizontal; /*Muestra los elementos alineados de manera horizontal*/
+	-webkit-box-pack: center;/*Alinea los elementos en el centro*/
+	/*-webkit-box-direction: reverse; /*Ordena los elementos de atras en adelante*/
+	color:#FFF;
+	height: 300px;
+	-webkit-box-align: center;/*Alinea todos los elementos en el centro verticalmente*/
+	-webkit-box-align: stress;
+}
+
+#bloque1{
+	border: 2px solid blue;
+	background-color: #526;
+	margin: 10px;
+	padding: 20px;
+	width: 60px;
+	-webkit-box-flex:3;
+	-webkit-box-ordinal-group:3;/*Ordena los elementos según el número introducido, en este caso, el bloque1 aparecerá en tercera posición*/
+	height: 200px;
+}
+#bloque2{
+	border: 2px solid blue;
+	background-color: #960100;
+	margin: 10px;
+	padding: 20px;
+	width: 60px;
+	-webkit-box-flex:1;
+	-webkit-box-ordinal-group:4;
+	height: 100px;
+}
+#bloque3{
+	border: 2px solid blue;
+	background-color: #303030;
+	margin: 10px;
+	padding: 20px;
+	width: 60px;
+	-webkit-box-flex:1;	
+	-webkit-box-ordinal-group:1;
+	height: 100px;
+}
+#bloque4{
+	border: 2px solid blue;
+	background-color: #528963;
+	margin: 10px;
+	padding: 20px;
+	width: 60px;
+	-webkit-box-flex:1;
+	-webkit-box-ordinal-group:2;
+	height: 100px;
+}

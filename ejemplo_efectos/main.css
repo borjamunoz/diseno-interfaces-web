@@ -1,0 +1,40 @@
+body{
+	text-align: center;
+	color:#FFF;
+}
+#box{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid grey;
+	/*background: pink*/
+	background: -webkit-linear-gradient(top, pink, white);
+	-webkit-border-radius: 10px;/*Redondear bordes*/
+	-webkit-box-shadow: rgb(152,235,201) 10px 10px 10px ;/*Sombreado*/
+	/*-webkit-transform: scale(1.5);/*transforma el elemento, en este caso lo escala*/
+	/*scale, translate, rotate...*/
+	-webkit-transition: -webkit-transform 5s, opacity 5s;
+}
+
+#box:hover{
+	-webkit-transform: scale(0.5);/*transforma el elemento, en este caso lo escala*/
+	opacity: 1;
+	background: black;
+}
+
+#text{
+	font: bold 30px helvetica;
+	text-shadow: 3px 3px #999;
+}
+#mosca img{
+	width: 5%;
+	height: auto;
+}
+
+#mosca img:hover{
+	width: 5%;
+	height: auto;
+	-webkit-transform: translate(100px, 150px);
+}
