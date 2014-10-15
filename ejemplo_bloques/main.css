@@ -1,5 +1,4 @@
-#contenedor{
-	border: 2px solid #999;
+#contenedor1{
 	display: -webkit-box;/*Hace funcionar el webkit-box*/
 	-webkit-box-orient: horizontal; /*Muestra los elementos alineados de manera horizontal*/
 	-webkit-box-pack: center;/*Alinea los elementos en el centro*/
@@ -8,17 +7,39 @@
 	height: 300px;
 	-webkit-box-align: center;/*Alinea todos los elementos en el centro verticalmente*/
 	-webkit-box-align: stress;
+	width: 70%;
+	float:left; 
 }
-
+#contenedor2{
+	display: -webkit-box;/*Hace funcionar el webkit-box*/
+	-webkit-box-orient: horizontal; /*Muestra los elementos alineados de manera horizontal*/
+	-webkit-box-pack: center;/*Alinea los elementos en el centro*/
+	/*-webkit-box-direction: reverse; /*Ordena los elementos de atras en adelante*/
+	color:#FFF;
+	height: 300px;
+	-webkit-box-align: center;/*Alinea todos los elementos en el centro verticalmente*/
+	-webkit-box-align: stress;
+	width: 20%;
+}
+#slider{
+	border: 2px solid blue;
+	background-color: #526;
+	margin: 10px;
+	padding: 20px;
+	width: 60px;
+	-webkit-box-flex:0.5;
+	/*-webkit-box-ordinal-group:3;/*Ordena los elementos según el número introducido, en este caso, el bloque1 aparecerá en tercera posición*/
+	height: 230px;
+}
 #bloque1{
 	border: 2px solid blue;
 	background-color: #526;
 	margin: 10px;
 	padding: 20px;
 	width: 60px;
-	-webkit-box-flex:3;
-	-webkit-box-ordinal-group:3;/*Ordena los elementos según el número introducido, en este caso, el bloque1 aparecerá en tercera posición*/
-	height: 200px;
+	height: 90px;
+	-webkit-box-flex:0.5;
+	/*-webkit-box-ordinal-group:3;/*Ordena los elementos según el número introducido, en este caso, el bloque1 aparecerá en tercera posición*/
 }
 #bloque2{
 	border: 2px solid blue;
@@ -26,9 +47,10 @@
 	margin: 10px;
 	padding: 20px;
 	width: 60px;
-	-webkit-box-flex:1;
-	-webkit-box-ordinal-group:4;
-	height: 100px;
+	height: 90px;
+	-webkit-box-orient: vertical; /*Muestra los elementos alineados de manera horizontal*/
+	-webkit-box-flex:0.5;
+	/*-webkit-box-ordinal-group:4;*/
 }
 #bloque3{
 	border: 2px solid blue;
@@ -36,9 +58,9 @@
 	margin: 10px;
 	padding: 20px;
 	width: 60px;
-	-webkit-box-flex:1;	
-	-webkit-box-ordinal-group:1;
-	height: 100px;
+	height: 90px;
+	-webkit-box-flex:0.5;	
+	/*-webkit-box-ordinal-group:1;*/
 }
 #bloque4{
 	border: 2px solid blue;
@@ -46,7 +68,18 @@
 	margin: 10px;
 	padding: 20px;
 	width: 60px;
-	-webkit-box-flex:1;
-	-webkit-box-ordinal-group:2;
-	height: 100px;
+	height: 90px;
+	-webkit-box-flex:0.5;
+	/*-webkit-box-ordinal-group:2;*/
 }
+#bloque5{
+	border: 2px solid blue;
+	background-color: #528963;
+	margin: 10px;
+	padding: 20px;
+	width: 60px;
+	height: 90px;
+	-webkit-box-flex:0.5;
+	/*-webkit-box-ordinal-group:2;*/
+}
+#bloques1 #bloque2:onclick #slider{background-color: #fff;}
