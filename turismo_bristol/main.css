@@ -7,15 +7,27 @@ header, section, footer, aside, nav, article, hgroup{
 }
 body{
 	color: #000305;
+	padding: 1% 1% 1% 1%;
 	font-size:12px;
 	font-family: "Andale Mono", AndaleMono, monospace;
 	/*display: -webkit-box;/*esto se utiliza para hacer la web responsive: http://css-infos.net/properties/webkit*/
 	/*-webkit-box-pack: center;	*/
 }
 .body{
-	margin: 3% auto;
+	margin: 1% auto;
 	width: 70%;
 	clear: both;
+}
+.body h1{
+	font-family: 'Droid Sans', sans-serif;
+	color: #999;
+	font-size: 500%;
+	line-height: 90%;
+	letter-spacing: 300%;
+}
+.body h1:hover{
+	color: #303030;
+    -webkit-transition: background-color 1000ms linear;
 }
 a{
 	text-decoration: none;
@@ -31,6 +43,7 @@ a:hover, a:active{
 	width: 100%;
 }
 .cabecera img{
+	margin-right: 5%;
 	float:left;
 	width: 18%;
 	/*display: -webkit-box;*/
@@ -48,21 +61,27 @@ a:hover, a:active{
 	margin-top: 6%;
 	float: left;
 	display:inline;
+	margin-right: 28px
 }
 .cabecera nav a:link, .cabecera nav a:visited{
 	color: #303030;
 	display:inline-block;
-	padding: 10px 25px;
+	padding: 5px 15px;
 	height: 15px;
 }
 .cabecera nav a:hover, .cabecera nav a:active, .cabecera nav .activo a:link, .cabecera nav .activo a:visited{
-	color:#999;
+	color:#fff;
 	text-shadow:none;
+	background-color: #303030;
 }
 .main_img {
 	width: 70%;
 	float: left;
 }
+#slogan{
+	margin: 2% 0 2% 0;
+}
+
 #contenedor1{
 	display: -webkit-box;/*Hace funcionar el webkit-box*/
 	-webkit-box-orient: horizontal; /*Muestra los elementos alineados de manera horizontal*/
@@ -87,7 +106,6 @@ a:hover, a:active{
 	width: 20%;
 }
 #slider{
-	border: 2px solid blue;
 	background-color: #526;
 	margin: 10px;
 	padding: 20px;
@@ -95,57 +113,69 @@ a:hover, a:active{
 	-webkit-box-flex:0.5;
 	/*-webkit-box-ordinal-group:3;/*Ordena los elementos según el número introducido, en este caso, el bloque1 aparecerá en tercera posición*/
 	height: 230px;
+	background-image: url('img/img_principal-1.jpg');
+	-webkit-background-size: cover;
 }
-#bloque1{
-	border: 2px solid blue;
-	background-color: #526;
-	margin: 10px;
-	padding: 20px;
-	width: 60px;
-	height: 90px;
-	-webkit-box-flex:0.5;
-	/*-webkit-box-ordinal-group:3;/*Ordena los elementos según el número introducido, en este caso, el bloque1 aparecerá en tercera posición*/
+#bloques1{
+	margin-right: 10%;
 }
 #bloque2{
-	border: 2px solid blue;
 	background-color: #960100;
-	margin: 10px;
+	margin: 9% 10% 10% 10%;
 	padding: 20px;
-	width: 60px;
-	height: 90px;
+	width: 75px;
+	height: 83px;
 	-webkit-box-orient: vertical; /*Muestra los elementos alineados de manera horizontal*/
 	-webkit-box-flex:0.5;
+	background-image: url('img/img_principal-2.jpg');
+	-webkit-background-size: cover;
 	/*-webkit-box-ordinal-group:4;*/
 }
 #bloque3{
-	border: 2px solid blue;
 	background-color: #303030;
-	margin: 10px;
+	margin: 20% 30% 10% 10%;
 	padding: 20px;
-	width: 60px;
-	height: 90px;
-	-webkit-box-flex:0.5;	
+	width: 75px;
+	height: 83px;
+	-webkit-box-flex:0.5;
+	background-image: url('img/img_principal-3.jpg');
+	-webkit-background-size: cover;
 	/*-webkit-box-ordinal-group:1;*/
 }
 #bloque4{
-	border: 2px solid blue;
 	background-color: #528963;
-	margin: 10px;
+	margin: 9% 10% 10% 10%;
 	padding: 20px;
-	width: 60px;
-	height: 90px;
+	width: 75px;
+	height: 83px;
 	-webkit-box-flex:0.5;
+	background-image: url('img/img_principal-4.jpg');
+	-webkit-background-size: cover;
 	/*-webkit-box-ordinal-group:2;*/
 }
 #bloque5{
-	border: 2px solid blue;
 	background-color: #528963;
-	margin: 10px;
+	margin: 20% 10% 10% 10%;
 	padding: 20px;
-	width: 60px;
-	height: 90px;
+	width: 75px;
+	height: 83px;
 	-webkit-box-flex:0.5;
+	background-image: url('img/img_principal-5.jpg');
+	-webkit-background-size: cover;
 	/*-webkit-box-ordinal-group:2;*/
 }
-#bloques1 #bloque2:onclick #slider{background-color: #fff;}
-
+hr {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 8px auto;
+   height: 0;
+   width: 100%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 1px solid #aaaaaa;
+   border-bottom: 1px solid #ffffff;
+}
