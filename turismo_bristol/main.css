@@ -27,6 +27,7 @@ body{
 #slogan h1:hover{
 	color: #303030;
     -webkit-transition: background-color 1000ms linear;
+	-moz-transition: background-color 1000ms linear;
 }
 
 .body h2{
@@ -40,6 +41,7 @@ body{
 .body h2:hover{
 	color: #303030;
     -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
 }
 
 .cabecera{
@@ -67,6 +69,7 @@ body{
 	display:block;
 	color:#303030;
  	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
 	transition: all 0.2s ease-in-out 0s;
 }
 .menu li a:hover, .menu li:hover > a, a:active{
@@ -119,11 +122,12 @@ body{
 	float: left;
 }
 #slogan{
+	background-image: url('img/img_principal-0.jpg');
 	float:left;
 	margin: 2% 0 2% 0;
 	width: 100%;
-	background-image: url('img/img_principal-0.jpg');
 	-webkit-background-size: cover;
+	-moz-background-size: cover;
 }
 
 #contenedor1{
@@ -131,30 +135,40 @@ body{
 	font-family:"Arial Black", Gadget, sans-serif;
 	font-size:18px;
 	display: -webkit-box;/*Hace funcionar el webkit-box*/
+	display: -moz-box;
 	-webkit-box-flex-direction: row;
 	-webkit-box-orient: horizontal; /*Muestra los elementos alineados de manera horizontal*/
 	-webkit-box-pack: center;/*Alinea los elementos en el centro*/
+	-moz-box-flex-direction: row;
+	-moz-box-orient: horizontal; /*Muestra los elementos alineados de manera horizontal*/
+	-moz-box-pack: center;/*Alinea los elementos en el centro*/
 	color:#FFF;
 	height: 300px;
 	-webkit-box-align: center;/*Alinea todos los elementos en el centro verticalmente*/
+	-moz-box-align: center;/*Alinea todos los elementos en el centro verticalmente*/
 }
 
 #bloque1{
 	margin-right: 3%;
 	padding: 20px;
 	height: 230px;
-	-webkit-box-flex:0.5;
 	background-image: url('img/img_principal-1.jpg');
 	-webkit-background-size: cover;
 	-webkit-transition: -webkit-transform 2s;
+	-webkit-box-flex:0.5;
+	-moz-background-size: cover;
+	-moz-transition: -moz-transform 2s;
+	-moz-box-flex:0.5;
 }
 #bloque2{
 	margin-right: 3%;
 	padding: 20px;
 	height: 230px;
-	-webkit-box-flex:0.5;
 	background-image: url('img/img_principal-2.jpg');
 	-webkit-background-size: cover;
+	-webkit-box-flex:0.5;
+	-moz-background-size: cover;
+	-moz-box-flex:0.5;
 	/*-webkit-box-ordinal-group:4;*/
 }
 #bloque3{
@@ -164,7 +178,8 @@ body{
 	-webkit-box-flex:0.5;
 	background-image: url('img/img_principal-3.jpg');
 	-webkit-background-size: cover;
-	/*-webkit-box-ordinal-group:1;*/
+	-moz-background-size: cover;
+	-moz-box-flex:0.5;
 }
 #bloque4{
 	margin-right: 3%;
@@ -173,7 +188,8 @@ body{
 	-webkit-box-flex:0.5;
 	background-image: url('img/img_principal-4.jpg');
 	-webkit-background-size: cover;
-	/*-webkit-box-ordinal-group:2;*/
+	-moz-background-size: cover;
+	-moz-box-flex:0.5;
 }
 #bloque5{
 	padding: 20px;
@@ -181,29 +197,39 @@ body{
 	-webkit-box-flex:0.5;
 	background-image: url('img/img_principal-5.jpg');
 	-webkit-background-size: cover;
-	/*-webkit-box-ordinal-group:2;*/
+	-moz-background-size: cover;
+	-moz-box-flex:0.5;
 }
 
 #bloque1:hover, #bloque2:hover, #bloque3:hover, #bloque4:hover, #bloque5:hover{
 	-webkit-box-shadow: inset 6px 10px 28px -9px rgba(0,0,0,0.75);
 	-webkit-box-flex: 8;
+	-moz-box-shadow: inset 6px 10px 28px -9px rgba(0,0,0,0.75);
+	-moz-box-flex: 8;
 }
 
 #contenedor2{
-	-webkit-box-flex-direction: row;
 	display: -webkit-box;/*Hace funcionar el webkit-box*/
+	display: -moz-box;/*Hace funcionar el webkit-box*/
+	-webkit-box-flex-direction: row;
+	-moz-box-flex-direction: row;
 	-webkit-box-orient: horizontal; /*Muestra los elementos alineados de manera horizontal*/
 	-webkit-box-pack: center;/*Alinea los elementos en el centro*/
 	-webkit-box-align: center;/*Alinea todos los elementos en el centro verticalmente*/
+	-moz-box-orient: horizontal; /*Muestra los elementos alineados de manera horizontal*/
+	-moz-box-pack: center;/*Alinea los elementos en el centro*/
+	-moz-box-align: center;/*Alinea todos los elementos en el centro verticalmente*/
 	width: 100%;
 }
 #contenedor2 div{
 	-webkit-box-flex: 2.5;
+	-moz-box-flex: 2.5;
 	margin: 2% 1.5% 2% 1.5%;
 	min-width:50%;
 }
 #contenedor2 div img:hover{
 	-webkit-box-shadow: #CCC 5px 5px 5px ;/*Sombreado*/
+	-moz-box-shadow: #CCC 5px 5px 5px ;/*Sombreado*/
 }
 
 #contenedor2 div img{
@@ -254,108 +280,135 @@ hr {
 }
 
 #contenedor3{
+	width:100%;
+	height: 100px;
 	display: -webkit-filter;
 	display: -webkit-box;/*Hace funcionar el webkit-box*/
+	display: -moz-filter;
+	display: -moz-box;/*Hace funcionar el webkit-box*/
 	-webkit-box-flex-direction: row;
 	-webkit-box-orient: horizontal; /*Muestra los elementos alineados de manera horizontal*/
 	-webkit-box-pack: center;/*Alinea los elementos en el centro*/
 	-webkit-box-align: center;/*Alinea todos los elementos en el centro verticalmente*/
-	width:100%;
-	height: 100px;
+	-moz-box-flex-direction: row;
+	-moz-box-orient: horizontal; /*Muestra los elementos alineados de manera horizontal*/
+	-moz-box-pack: center;/*Alinea los elementos en el centro*/
+	-moz-box-align: center;/*Alinea todos los elementos en el centro verticalmente*/
 }
 #foto1{
 	margin:0 1% 0 1%;
-	-webkit-box-flex:1;
  	width: 20%;
 	height:75px;
-	background-image:url(img/contenido1.jpg);
+	background-image:url('img/contenido1.jpg');
+	-webkit-box-flex:1;
 	-webkit-background-size: cover;
+	-moz-box-flex:1;
+	-moz-background-size: cover;
 	border: 1px solid #999;
 }
 #foto2{
 	margin:0 1% 0 1%;
-	-webkit-box-flex:1;
  	width: 20%;
 	border: 1px solid #999;
 	height:75px;
-	background-image:url(img/contenido1.jpg);
+	background-image:url('img/contenido1.jpg');
 	-webkit-background-size: cover;
+	-webkit-box-flex:1;
+	-moz-background-size: cover;
+	-moz-box-flex:1;
 }
 #foto3{
 	margin:0 1% 0 1%;
-	-webkit-box-flex:1;
  	width: 20%;
 	border: 1px solid #999;
 	height:75px;
-	background-image:url(img/contenido1.jpg);
+	background-image:url('img/contenido1.jpg');
 	-webkit-background-size: cover;
+	-webkit-box-flex:1;
+	-moz-background-size: cover;
+	-moz-box-flex:1;
 }
 #foto4{
 	margin:0 1% 0 1%;
-	-webkit-box-flex:1;
  	width: 20%;
 	border: 1px solid #999;
 	height:75px;
-	background-image:url(img/contenido1.jpg);
+	background-image:url('img/contenido1.jpg');
 	-webkit-background-size: cover;
+	-webkit-box-flex:1;
+	-moz-background-size: cover;
+	-moz-box-flex:1;
 }
 #foto5{
 	margin:0 1% 0 1%;
-	-webkit-box-flex:1;
  	width: 20%;
 	border: 1px solid #999;
 	height:75px;
-	background-image:url(img/contenido1.jpg);
+	background-image:url('img/contenido1.jpg');
 	-webkit-background-size: cover;
+	-webkit-box-flex:1;
+	-moz-background-size: cover;
+	-moz-box-flex:1;
 }
 #foto6{
 	margin:0 1% 0 1%;
-	-webkit-box-flex:1;
  	width: 20%;
 	border: 1px solid #999;
 	height:75px;
-	background-image:url(img/contenido1.jpg);
+	background-image:url('img/contenido1.jpg');
 	-webkit-background-size: cover;
+	-webkit-box-flex:1;
+	-moz-background-size: cover;
+	-moz-box-flex:1;
 }
 #foto7{
 	margin:0 1% 0 1%;
-	-webkit-box-flex:1;
  	width: 20%;
 	border: 1px solid #999;
 	height:75px;
-	background-image:url(img/contenido1.jpg);
+	background-image:url('img/contenido1.jpg');
 	-webkit-background-size: cover;
+	-webkit-box-flex:1;
+	-moz-background-size: cover;
+	-moz-box-flex:1;
 }
 #foto8{
 	margin:0 1% 0 1%;
-	-webkit-box-flex:1;
  	width: 20%;
 	border: 1px solid #999;
 	height:75px;
-	background-image:url(img/contenido1.jpg);
+	background-image:url('img/contenido1.jpg');
 	-webkit-background-size: cover;
+	-webkit-box-flex:1;
+	-moz-background-size: cover;
+	-moz-box-flex:1;
 }
 #foto9{
 	margin:0 1% 0 1%;
-	-webkit-box-flex:1;
  	width: 20%;
 	border: 1px solid #999;
 	height:75px;
-	background-image:url(img/contenido1.jpg);
+	background-image:url('img/contenido1.jpg');
 	-webkit-background-size: cover;
+	-webkit-box-flex:1;
+	-moz-background-size: cover;
+	-moz-box-flex:1;
 }
 #foto10{
 	margin:0 1% 0 1%;
-	-webkit-box-flex:1;
  	width: 20%;
 	border: 1px solid #999;
 	height:75px;
-	background-image:url(img/contenido1.jpg);
+	background-image:url('img/contenido1.jpg');
 	-webkit-background-size: cover;
+	-webkit-box-flex:1;
+	-moz-background-size: cover;
+	-moz-box-flex:1;
 }
 
 #contenedor3 div:hover{
 	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
 }
 .pie{
 	text-align:center;
