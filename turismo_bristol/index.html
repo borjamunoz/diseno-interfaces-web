@@ -9,39 +9,85 @@
 	<body class="body">
 		<header class="cabecera">
 		<img src="img/visitbristol_logo.jpg"></img>
-        <nav class="navegador">
-        	<ul>
+        <nav>
+        	<ul class="menu">
             	<li class="activo"><a href="#">Descubre</a></li>
-                <li><a href="#">Zonas</a></li>
-                <li><a href="#">Estilos</a></li>
+                <li><a href="#">Zonas</a>
+                	<ul class="sub-menu">
+            			<li><a href="#">Zona 1</a></li>
+            			<li><a href="#">Zona 2</a></li>
+            			<li><a href="#">Zona 3</a></li>
+        		   </ul>
+                </li>
+                <li><a href="#">Diversidad</a>
+             	   <ul class="sub-menu">
+            			<li><a href="#">Barrio 1</a></li>
+            			<li><a href="#">Barrio 2</a></li>
+            			<li><a href="#">Barrio 3</a></li>
+        		   </ul>
+                </li>
             	<li><a href="#">Cultura</a></li>
             	<li><a href="#">Alojamiento</a></li>
             	<li><a href="#">Calendario</a></li>
             </ul>
-        </nav>
+        </nav><!--fin del navegador-->
+        <div class="redes">
+        	<ul>
+            	<li><a href="#"><img src="img/youtube.png"/><a></li>
+            	<li><a href="#"><img src="img/vimeo.png"/><a></li>
+			    <li><a href="#"><img src="img/twitter.png"/><a></li>
+              	<li><a href="#"><img src="img/facebook.png"/><a></li>
+            </ul>
+        </div>
+
 		</header>
-		<hr>
 		<section id="slogan">
-			<h1>LA CUNA DEL ARTE, <br/> LA CREATIVIDAD Y <br/> LA CULTURA</h1>
+			<h1>CUNA DEL ARTE, <br/> LA CREATIVIDAD Y <br/> LA CULTURA</h1>
 		</section>
 		<hr>
 		<section id="contenedor1">
-			<div id="slider">Slider</div>	
-		</section>
-
-		<section id="contenedor2">
-			<div id="bloques1">
+				<div id="bloque1">Bloque 1</div>	
 				<div id="bloque2">Bloque 2</div>
 				<div id="bloque3">Bloque 3</div>
-			</div>
-			<div id="bloques2">	
 				<div id="bloque4">Bloque 4</div>
 				<div id="bloque5">Bloque 5</div>
-			</div>
 		</section>
-		<hr>
-		<section id="divierte">
-			<h1>DIVIERTETE</h1>
-		</section>
-	</body>
+        <div id="tituloDescubre"><h2>Descubre</h2><hr></div>
+        		<section id="contenedor2">
+                    <div id="contenido1">
+                        <h1>Noticias</h1>
+                        <img src="img/contenido1.jpg"/>
+                        <p>Lee las últimas noticias</p>
+                    </div><!--fin de articulo 1-->
+                    
+                    <div id="contenido2">
+                        <h1>Rutas</h1>
+                        <img src="img/contenido2.jpg"/>
+                        <p>Descubre tu ruta ideal</p>
+                    </div><!--fin de articulo 2-->	
+                    
+                    <div id="contenido3">
+                        <h1>Gastronomia</h1>
+                        <img src="img/contenido3.jpg"/>
+                        <p>Degusta lo mejor de Bristol</p>
+                    </div><!--fin de articulo 3-->
+    			
+                </section><!--fin de contenedor 2-->
+              <section>
+                 <div id="alojamiento">
+                        <img src="img/alojamiento.jpg"/>
+                </div>
+			</section><!--fin de alojamiento-->
+			<section id="ultimas-noticias">
+        		<h2>Lo mejor de Bristol</h2>
+           	 	<hr>
+                <article>
+                	<img src="img/noticias1.jpg"/>
+                    <header>Esto es la noticia 1</header>
+                    <p>Esto es un párrafo</p>
+                    <footer>Esto es el pie</footer>
+                </article>
+       		 </section>
+             <footer class="pie"><p> © copyright 2014 - Borja Muñoz</p></footer>
+      	</body>
 </html>

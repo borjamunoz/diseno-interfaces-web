@@ -2,6 +2,7 @@
 	margin:0px;
 	padding: 0px;
 }
+
 header, section, footer, aside, nav, article, hgroup{
 	display: block;
 }
@@ -10,121 +11,146 @@ body{
 	padding: 1% 1% 1% 1%;
 	font-size:12px;
 	font-family: "Andale Mono", AndaleMono, monospace;
-	/*display: -webkit-box;/*esto se utiliza para hacer la web responsive: http://css-infos.net/properties/webkit*/
-	/*-webkit-box-pack: center;	*/
 }
 .body{
 	margin: 1% auto;
 	width: 70%;
 	clear: both;
 }
-.body h1{
+#slogan h1{
 	font-family: 'Droid Sans', sans-serif;
 	color: #999;
 	font-size: 500%;
 	line-height: 90%;
 	letter-spacing: 300%;
 }
-.body h1:hover{
+#slogan h1:hover{
 	color: #303030;
     -webkit-transition: background-color 1000ms linear;
 }
-a{
-	text-decoration: none;
+
+.body h2{
+	margin:2% 0 2% 0;
+	font-family: 'Droid Sans', sans-serif;
+	color: #999;
+	font-size: 250%;
+	line-height: 90%;
+	letter-spacing: 300%;
 }
-a:link, a:visited{
-	color: #6666FF;
+.body h2:hover{
+	color: #303030;
+    -webkit-transition: background-color 1000ms linear;
 }
 
-a:hover, a:active{
-	color: #FFF;
-}
 .cabecera{
 	width: 100%;
 }
 .cabecera img{
 	margin-right: 5%;
+	margin-bottom: 5%;
 	float:left;
-	width: 18%;
-	/*display: -webkit-box;*/
-}
-.cabecera nav{
-	height: 100px;
+	width: 17%;
 }
 
-.cabecera nav ul{
-	list-style:none;
-	margin: 0 auto;
+.menu{
+	display:block;
 }
 
-.cabecera nav ul li{
+.menu li{
+	display: inline-block;
+	position: relative;
 	margin-top: 6%;
-	float: left;
-	display:inline;
-	margin-right: 28px
 }
-.cabecera nav a:link, .cabecera nav a:visited{
-	color: #303030;
-	display:inline-block;
-	padding: 5px 15px;
-	height: 15px;
+.menu li a {
+	text-decoration:none;
+	padding:11px;
+	display:block;
+	color:#303030;
+ 	-webkit-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
 }
-.cabecera nav a:hover, .cabecera nav a:active, .cabecera nav .activo a:link, .cabecera nav .activo a:visited{
-	color:#fff;
-	text-shadow:none;
-	background-color: #303030;
+.menu li a:hover, .menu li:hover > a, a:active{
+	color:#ffffff;
+	background:#303030;
 }
+
+/* esconde nivel 2 */
+.menu ul {
+	display:none;
+	margin: 0;
+	padding: 0;
+	width: 150px;
+	position: absolute;
+	top: 32px;
+	left: 0px;
+	background: #ffffff;
+}
+ 
+/* muestra nivel 2 en hover */
+.menu li:hover > ul{
+	 display: block;
+}
+ 
+.menu ul li {
+	display:block;
+	float: none;
+	background:none;
+	margin:0;
+	padding:0;
+}
+ 
+.menu ul li a {
+	font-size:12px;
+	font-weight:normal;
+	display:block;
+	color:#FFF;
+	border-left:3px solid #ffffff;
+	background:#303030;
+}
+ 
+.menu ul li a:hover, .menu ul li:hover > a{
+	background:#f0f0f0;
+	border-left:3px solid #9CA3DA;
+	color:#797979;
+}
+
 .main_img {
 	width: 70%;
 	float: left;
 }
 #slogan{
+	float:left;
 	margin: 2% 0 2% 0;
+	width: 100%;
+	background-image: url('img/img_principal-0.jpg');
+	-webkit-background-size: cover;
+	-webkit-box-flex:1;
 }
 
 #contenedor1{
 	display: -webkit-box;/*Hace funcionar el webkit-box*/
+	-webkit-box-flex-direction: row;
 	-webkit-box-orient: horizontal; /*Muestra los elementos alineados de manera horizontal*/
 	-webkit-box-pack: center;/*Alinea los elementos en el centro*/
-	/*-webkit-box-direction: reverse; /*Ordena los elementos de atras en adelante*/
 	color:#FFF;
 	height: 300px;
 	-webkit-box-align: center;/*Alinea todos los elementos en el centro verticalmente*/
-	-webkit-box-align: stress;
-	width: 70%;
-	float:left; 
 }
-#contenedor2{
-	display: -webkit-box;/*Hace funcionar el webkit-box*/
-	-webkit-box-orient: horizontal; /*Muestra los elementos alineados de manera horizontal*/
-	-webkit-box-pack: center;/*Alinea los elementos en el centro*/
-	/*-webkit-box-direction: reverse; /*Ordena los elementos de atras en adelante*/
-	color:#FFF;
-	height: 300px;
-	-webkit-box-align: center;/*Alinea todos los elementos en el centro verticalmente*/
-	-webkit-box-align: stress;
-	width: 20%;
-}
-#slider{
-	background-color: #526;
-	margin: 10px;
+
+#bloque1{
+	margin-right: 3%;
 	padding: 20px;
-	width: 60px;
-	-webkit-box-flex:0.5;
-	/*-webkit-box-ordinal-group:3;/*Ordena los elementos según el número introducido, en este caso, el bloque1 aparecerá en tercera posición*/
 	height: 230px;
+	-webkit-box-orient: vertical; /*Muestra los elementos alineados de manera horizontal*/
+	-webkit-box-flex:0.5;
 	background-image: url('img/img_principal-1.jpg');
 	-webkit-background-size: cover;
-}
-#bloques1{
-	margin-right: 10%;
+	-webkit-transition: -webkit-transform 2s;
 }
 #bloque2{
-	background-color: #960100;
-	margin: 9% 10% 10% 10%;
+	margin-right: 3%;
 	padding: 20px;
-	width: 75px;
-	height: 83px;
+	height: 230px;
 	-webkit-box-orient: vertical; /*Muestra los elementos alineados de manera horizontal*/
 	-webkit-box-flex:0.5;
 	background-image: url('img/img_principal-2.jpg');
@@ -132,38 +158,77 @@ a:hover, a:active{
 	/*-webkit-box-ordinal-group:4;*/
 }
 #bloque3{
-	background-color: #303030;
-	margin: 20% 30% 10% 10%;
+	margin-right: 3%;
 	padding: 20px;
-	width: 75px;
-	height: 83px;
+	height: 230px;
 	-webkit-box-flex:0.5;
 	background-image: url('img/img_principal-3.jpg');
 	-webkit-background-size: cover;
 	/*-webkit-box-ordinal-group:1;*/
 }
 #bloque4{
-	background-color: #528963;
-	margin: 9% 10% 10% 10%;
+	margin-right: 3%;
 	padding: 20px;
-	width: 75px;
-	height: 83px;
+	height: 230px;
 	-webkit-box-flex:0.5;
 	background-image: url('img/img_principal-4.jpg');
 	-webkit-background-size: cover;
 	/*-webkit-box-ordinal-group:2;*/
 }
 #bloque5{
-	background-color: #528963;
-	margin: 20% 10% 10% 10%;
 	padding: 20px;
-	width: 75px;
-	height: 83px;
+	height: 230px;
 	-webkit-box-flex:0.5;
 	background-image: url('img/img_principal-5.jpg');
 	-webkit-background-size: cover;
 	/*-webkit-box-ordinal-group:2;*/
 }
+
+#bloque1:hover, #bloque2:hover, #bloque3:hover, #bloque4:hover, #bloque5:hover{
+	-webkit-box-shadow: inset 6px 10px 28px -9px rgba(0,0,0,0.75);
+	-webkit-box-flex: 8;
+}
+
+#contenedor2{
+	-webkit-box-flex-direction: row;
+	display: -webkit-box;/*Hace funcionar el webkit-box*/
+	-webkit-box-orient: horizontal; /*Muestra los elementos alineados de manera horizontal*/
+	-webkit-box-pack: center;/*Alinea los elementos en el centro*/
+	/*-webkit-box-direction: reverse; /*Ordena los elementos de atras en adelante*/
+	-webkit-box-align: center;/*Alinea todos los elementos en el centro verticalmente*/
+	width: 70%;
+	float:left;
+	min-width:50%;
+}
+#contenedor2 div{
+	-webkit-box-flex: 1;
+	min-width:50%;
+	margin: 2% 1.5% 2% 1.5%;
+}
+
+#contenido1 h1{
+	margin-bottom: 3%;
+	font-size:16px;
+}
+
+#contenedor2 div img{
+	width:100%;
+	margin-bottom: 3%;
+	height:auto;
+	border: 1px solid #999;
+}
+#alojamiento{
+	width: 28%;
+	margin: 3% 0 0 1%;
+	float:left;
+	-webkit-box-flex: 1;
+	min-width:20%;
+
+}
+#alojamiento img{
+	width:100%;
+}
+
 hr {
    display: block;
    position: relative;
@@ -178,4 +243,32 @@ hr {
    border: none;
    border-top: 1px solid #aaaaaa;
    border-bottom: 1px solid #ffffff;
+}
+.redes img{
+	width: 24px;
+	height: auto;
+}
+.redes ul{
+	list-style:none;
+	margin: 0 auto;
+}
+.redes ul li{
+	float: right;
+	display:inline-block;
+	margin: -4% 1% 3% 1%;
+}
+
+.pie{
+	text-align:center;
+	background:#000;
+	witdh: 100%;
+	height:50px;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+.pie p {
+	width: 92%;
+	margin: 5% auto;
+	color: #FFF;
+	padding: 20px;
 }
