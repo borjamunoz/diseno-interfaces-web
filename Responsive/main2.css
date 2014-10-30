@@ -1,0 +1,13 @@
+.edukia:before {
+    content:"Insert your user name";
+}
+@media screen and (max-width: 1024px) {
+    .edukia:before {
+        content:"User name";
+    }
+}
+@media screen and (max-width: 480px) {
+    .edukia:before {
+        content:"";
+    }
+}

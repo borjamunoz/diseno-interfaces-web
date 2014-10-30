@@ -1,0 +1,170 @@
+/* imports */
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+/* resets */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.clearfix:after,
+.clearfix:before{
+  content: "";
+  display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}
+
+/* global */
+body {
+  background-color: rgb(40,40,40);
+  color: rgb(100,100,100);
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+}
+.wrapper {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 95%;
+  background-color: #fff;
+}
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+h2 {
+  font-weight: 700;
+}
+
+/* layout */
+.container {
+  
+}
+.primary {
+  margin-bottom: 20px;
+}
+nav {
+	height: 40px;
+	width: 100%;
+	background: #455868;
+	font-size: 11pt;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-weight: bold;
+	position: relative;
+	border-bottom: 2px solid #283744;
+}
+nav ul {
+	padding: 0;
+	margin: 0 auto;
+	width: 600px;
+	height: 40px;
+}
+nav a {
+	color: #fff;
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	text-shadow: 1px 1px 0px #283744;
+}
+nav li{
+    display: inline;
+    padding: 10px;
+}
+nav li a {
+	border-right: 1px solid #576979;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+nav li:last-child a {
+	border-right: 0;
+}
+nav a:hover, nav a:active {
+	background-color: #8c99a4;
+}
+nav a#pull{
+    display: none;
+}
+@media all and ( min-width: 600px ) {
+  
+  .container {
+    padding-right: 0px;
+  }
+  .primary {
+    float: left;
+    padding-right: 60px;
+    width: 70%;
+  }
+  .secondary {
+    float: right;
+    margin-right: 0px;
+    width: 30%;
+  }
+.hirugarrena{
+    float: right;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin: auto;
+    width: 100%;
+}
+  
+}
+
+@media screen and ( max-width: 600px){
+       nav{
+        height: auto;
+       }
+       nav ul{
+        width: 100%;
+        display: block;
+           height: auto;
+       }
+        nav li{
+        width: 50%;
+        float: left;
+        position: relative;
+        }
+        nav li a{
+        border-bottom: 1px solid #576979;
+        border-right: 1px solid #576979;
+        }
+        nav a{
+        text-align: left;
+            width: 100%;
+            text-indent: 25px;
+        }
+}
+@media only screen and ( max-width: 450px){
+       nav{
+            border-bottom: 0;
+       }
+       nav ul{
+           display: none;
+           height: auto;
+       }
+        nav a#pull {
+            display: block;
+            background-color: #283744;
+            width: 100%;
+            position: relative;
+        }
+        nav a#pull:after {
+            content: "";
+            background: url('nav-icon.png') no-repeat;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+        }
+}

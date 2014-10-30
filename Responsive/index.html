@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Froga bat da hau</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+    </head>
+<body>
+  <div class="wrapper">
+    <h1>Bertsioa 1: Modu naturalean txikituaz</h1>
+      <nav class="clearfix">
+        <ul class="clearfix" id="botoiak">
+            <li><a href="#">Hasiera</a></li>
+            <li><a href="#">Informazioa</a></li>
+            <li><a href="#">Joerak</a></li>
+            <li><a href="#">Loturak</a></li>
+        </ul>
+           <a href="#" id="pull">Menua</a>
+      </nav>
+     
+    
+    <div class="container clearfix">
+      <div class="primary">
+        <h2>Lehena</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum quasi nulla molestias accusamus aspernatur reiciendis qui optio tenetur modi repellendus distinctio dolore nesciunt. Repellat provident explicabo accusamus autem perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse architecto modi ratione porro magnam explicabo! Porro dolore aut nam sed officiis dolores unde quo nostrum vero earum error ipsum cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere aliquam explicabo sapiente doloremque perspiciatis qui iste ipsa consectetur suscipit eum totam laborum quidem quam sint ducimus fugit dolorem illum doloribus!
+      </div>
+      <div class="secondary">
+        <h2>Bigarrena</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum quasi nulla molestias accusamus aspernatur reiciendis qui optio tenetur modi repellendus distinctio dolore nesciunt. Repellat provident explicabo accusamus autem perspiciatis.
+      </div>
+        <div class="hirugarrena">
+        <h2>Hirugarrena</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum quasi nulla molestias accusamus aspernatur reiciendis qui optio tenetur modi repellendus distinctio dolore nesciunt. Repellat provident explicabo accusamus autem perspiciatis.
+      </div>
+    </div><!-- /.container -->
+  </div><!-- /.wrapper -->
+</body>
+</html>
