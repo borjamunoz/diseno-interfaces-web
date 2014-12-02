@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	text-align: center;	
+}
+
+header,section,nav{
+	display:block;
+}
+
+button {
+  background: url('play.png');
+  width:32px;
+  height:auto;
+  border: none;
+}
+
+#reproductor{
+	width: 720px;
+	height: 305px;
+	padding: 15px;
+	background: #2B2B2B;
+	border: 3px solid #666666;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;	
+}
+nav{
+	margin: 10px 0px;
+}
+#botones{
+	float:left;
+	width:100px;
+	height:22px;
+}
+
+#barra{
+	position: relative;
+	float: left;
+	width: 550px;
+	height:8px;
+	paddign: 2px;
+	background: #90EE90;
+}
+#progreso{
+	position: relative;
+	float: left;
+	width: 550px;
+	height: 8px;
+	margin: 6px;
+	padding: 2px;
+	background: grey;
+}
+
+#reproducir{
+	height: 32px;	
+}
