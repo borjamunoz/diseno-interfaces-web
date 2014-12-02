@@ -10,6 +10,9 @@ var barra;
 var progreso;
 var bucle;
 var btn;
+var audioPlay;
+var duration;
+var music;
  
 function iniciar(){
 	
@@ -17,7 +20,11 @@ function iniciar(){
 	reproducir=document.getElementById('reproducir');
 	progreso=document.getElementById('progreso');		
 	barra=document.getElementById('barra');	
+	audioPlay = document.getElementById('music');
+	music = document.getElementById('playhead');
 	
+	music.addEventListener("canplaythrough", function () {duration = music.duration;}, false);
+	music.addEventListener("timeupdate", timeUpdate, false);
 	reproducir.addEventListener('click', presionar, false);
 	progreso.addEventListener('click', mover, false);
 }
@@ -54,6 +61,7 @@ function estado(){
 		
 	}
 }
+
 function mover(e){
 	
 	if(!medio.paused && !medio.ended){
@@ -64,4 +72,21 @@ function mover(e){
 		barra.style.width=ratonX+'px';
 		
 	}	
+}
+
+function playAudio() {
+	if (audioPlay.paused) {
+		audioPlay.play();
+		pButton.className = "";
+		pButton.className = "pause";
+	} else { 
+		audioPlay.pause();
+		pButton.className = "";
+		pButton.className = "play";
+	}
+}
+
+function timeUpdate() {
+	var playPercent = 100 * (music.currentTime / duration);
+	playhead.style.marginLeft = playPercent + "%";
 }
