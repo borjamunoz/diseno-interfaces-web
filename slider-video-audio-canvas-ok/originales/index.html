@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Tarea slider</title>
+	<script type="text/javascript" src="video.js"></script>
+	<link rel="stylesheet" type="text/css" href="video.css">
+</head>
+
+<body>
+	<div id="video_player_box">
+		<video id="my_video" width="600" height="320">
+			<source src="videos/video.mp4">
+		</video>
+		<div id="video_controls_bar">
+			<button id="playPauseBtn"></button>
+			<input id="seekSlider" type="range" min="0" max="100" value="0" step="1">
+			<span id="curTimeText">00:00/</span><span id="durTimeText">00:00</span>
+			<button id="muteBtn"></button>
+			<input id="volumeSlider" type="range" min="0" max="100" value="100" step="1">
+			<button id="fullScreenBtn">[ &nbsp; ]</button>
+		</div>
+	</div>
+</body>
+</html>

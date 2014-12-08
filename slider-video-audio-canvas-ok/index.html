@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Tarea slider</title>
+	<script type="text/javascript" src="video.js"></script>
+	<script type="text/javascript" src="audio.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="video.css">
+	<link rel="stylesheet" type="text/css" href="audio.css">
+	<link href="main.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="cajaSlider">
+		<div id="slider">
+			<input type="radio" id="control1" name="controls" checked="checked"/>
+			<label for="control1"></label>
+			<input type="radio" id="control2" name="controls"/>
+			<label for="control2"></label>
+			<input type="radio" id="control3" name="controls"/>
+			<label for="control3"></label>
+			<input type="radio" id="control4" name="controls"/>
+			<label for="control4"></label>
+			<input type="radio" id="control5" name="controls"/>
+			<label for="control5"></label>
+			<div id="sliderinner">
+				<ul>
+				<li>
+				<div class="video_player_box">
+					<video id="my_video0" width="600" height="320">
+						<source src="videos/video.mp4">
+					</video>
+					<div class="video_controls_bar" id="video_controls_bar0">
+						<button class="playPauseBtn" id="playPauseBtn0" value='0'></button>
+						<input class="seekSlider" id="seekSlider0" type="range" min="0" max="100" value="0" step="1">
+						<span id="curTimeText0">00:00/</span><span class="durTimeText" id="durTimeText0">00:00</span>
+						<button class="muteBtn" id="muteBtn0"></button>
+						<input class="volumeSlider" id="volumeSlider0" type="range" min="0" max="100" value="100" step="1">
+						<button class="fullScreenBtn" id="fullScreenBtn0">[ &nbsp; ]</button>
+					</div>
+				</div>
+				</li>
+				<li>
+					<div class="video_player_box">
+					<video id="my_video1" width="600" height="320">
+						<source src="videos/video2.mp4">
+					</video>
+					<div class="video_controls_bar" id="video_controls_bar1">
+						<button class="playPauseBtn" id="playPauseBtn1" value='1'></button>
+						<input class="seekSlider" id="seekSlider1" type="range" min="0" max="100" value="0" step="1">
+						<span  id="curTimeText1">00:00/</span><span class="durTimeText" id="durTimeText1">00:00</span>
+						<button class="muteBtn" id="muteBtn1"></button>
+						<input class="volumeSlider" id="volumeSlider1" type="range" min="0" max="100" value="100" step="1">
+						<button class="fullScreenBtn" id="fullScreenBtn1">[ &nbsp; ]</button>
+					</div>
+					</div>
+					</li>
+					<li>
+					<div class="video_player_box">
+					<video id="my_video2" width="600" height="320">
+						<source src="videos/video3.mp4">
+					</video>
+					<div class="video_controls_bar" id="video_controls_bar2">
+						<button class="playPauseBtn" id="playPauseBtn2" value='2'></button>
+						<input class="seekSlider" id="seekSlider2" type="range" min="0" max="100" value="0" step="1">
+						<span  id="curTimeText2">00:00/</span><span class="durTimeText" id="durTimeText2">00:00</span>
+						<button class="muteBtn" id="muteBtn2"></button>
+						<input class="volumeSlider" id="volumeSlider2" type="range" min="0" max="100" value="100" step="1">
+						<button class="fullScreenBtn" id="fullScreenBtn2">[ &nbsp; ]</button>
+					</div>
+					</div>
+					</li>
+					<li>
+						<audio id="music" preload="true">
+							<source src="song.ogg" type="audio/ogg">
+						</audio>
+						<div id="audioplayer">
+							<button id="pButton" class="play"></button>
+						  <div id="timeline">    
+						  	<div id="playhead"></div>
+						  </div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div><!--cierre slider-->
+	</div><!--cierre cajaSlider-->
+	<canvas id='canvas' width='600' height='400'>
+      Tu navegador no soporta canvas
+    </canvas>
+    <script src='canvas.js'></script>
+</body>
+</html>
